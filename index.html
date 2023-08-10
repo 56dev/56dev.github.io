@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
     <head>
         <title>56dev's site</title>
+        <script src="Scripts\main.ts"></script>
     </head>
 
-<body>
-    <h1>Hello World</h1>
-</body>
+    <style>
+        body{
+            background-color : black;
+        }
+        
+        h1{
+            color : white;
+            font-family :Verdana, Geneva, Tahoma, sans-serif;
+            text-align : center;
+            
+        }
+        h3{
+            color : white;
+            font-family :Verdana, Geneva, Tahoma, sans-serif;
+            text-align : center;
+        }
+
+        @font-face{
+            font-family: scp;
+            src : url(Assets/Fonts/SourceCodeProExtralight-m5r2.ttf);
+        }
+        *{
+            color : white;
+            font-family: scp;
+            text-align: center;
+        }
+
+        .center{
+            display : block;
+            margin-left : auto;
+            margin-right : auto;
+            width : 50%;
+        }
+
+        
+
+
+    </style>
+
+
+    <body>
+        <a onclick="showLinks()" style="cursor: pointer" onmouseover="cursor: hand">
+             <img src="Assets\56icon.gif" alt="56dev logo." class="center" type="button">
+        </a>
+
+        <div id="links" hidden="true">
+        
+            <a href="https://www.youtube.com/channel/UCTqhXPUubw4rpsuJZqy-oIQ">my youtube channel<br><br></a>
+            <a href="projects.html">my projects<br><br></a>
+            <a href="writings.html">my writings<br><br></a>
+
+        </div>
+
+    </body>
+
     
 </html>
